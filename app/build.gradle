@@ -29,6 +29,23 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    testCompile 'org.jetbrains.kotlin:kotlin-reflect:1.1.51'
+    //For LifeCycles,LiveData and ViewModel
+    compile "android.arch.lifecycle:runtime:1.0.0"
+    compile "android.arch.lifecycle:extensions:1.0.0-beta2"
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-beta2"
+    compile "android.arch.lifecycle:common-java8:1.0.0-beta2"
+    testCompile "android.arch.core:core-testing:1.0.0-beta2"
+    compile "android.arch.lifecycle:reactivestreams:1.0.0-beta2"
+
+    //For Room
+    compile "android.arch.persistence.room:runtime:1.0.0-beta2"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-beta2"
+    testCompile "android.arch.persistence.room:testing:1.0.0-beta2"
+    compile "android.arch.persistence.room:rxjava2:1.0.0-beta2"
+
+    //For Paging
+    compile "android.arch.paging:runtime:1.0.0-alpha3"
 }
 repositories {
     mavenCentral()
